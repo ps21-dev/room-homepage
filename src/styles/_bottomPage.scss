@@ -1,0 +1,22 @@
+.bottom-page {
+	display: flex;
+	min-height: 30vh;
+	img {
+		width: 700px;
+		height: 292px;
+	}
+}
+.about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 40%;
+	padding: 4rem;
+	h4 {
+		font-size: 13px;
+	}
+	p {
+		font-size: 13px;
+	}
+}

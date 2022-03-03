@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Spartan", sans-serif;
+}
+
+$DarkGray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$VeryDarkGray: hsl(0, 0%, 27%);
+
+h1 {
+	color: $Black;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 45px;
+	letter-spacing: -1.66667px;
+}
+h4 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 22px;
+	/* identical to box height, or 183% */
+
+	text-align: justify;
+	letter-spacing: 5px;
+}
+p {
+	color: $DarkGray;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: -0.25px;
+}
+
+a {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height, or 133% */
+	letter-spacing: 10px;
+	text-decoration: none;
+	color: $Black;
+	&:hover {
+		color: $DarkGray;
+	}
+}
+// .main-page {
+// 	display: flex;
+// 	flex-direction: column;
+// 	flex: wrap;
+// }
+@import "./navStyle";
+@import "./topPageStyle";
+@import "./bottomPage";
+@import "./mobile";

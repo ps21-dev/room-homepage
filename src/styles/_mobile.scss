@@ -1,0 +1,35 @@
+//IPAD
+@media screen and (max-width: 1040px) {
+	.first-half {
+		flex-direction: column;
+	}
+
+	.promo-text,
+	.about-text {
+		height: 300px;
+		padding: 4rem;
+	}
+
+	.left-promo,
+	.display,
+	.promotion,
+	.bottom-page img,
+	.about-text {
+		width: 100%;
+	}
+
+	.bottom-page {
+		flex-direction: column;
+	}
+	.main-page {
+		display: flex;
+		flex-direction: column;
+	}
+}
+//PHONES
+// @media screen and (max-width: 768px) {
+// 	.display {
+// 		width: 375px;
+// 		height: 360px;
+// 	}
+// }
