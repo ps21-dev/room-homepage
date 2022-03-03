@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
 //Images
 import hero1 from "../images/desktop-image-hero-1.jpg";
 import previous from "../images/icon-angle-left.svg";
@@ -14,11 +15,15 @@ const FirstPage = ({ products }) => {
 	const length = products.length;
 	//EventHandlers
 	const nextButtonHandler = () => {
-		setCurrentProduct(currentProduct === length - 1 ? 0 : currentProduct + 1);
+		setCurrentProduct(
+			currentProduct === length - 1 ? 0 : currentProduct + 1
+		);
 	};
 
 	const previousButtonHandler = () => {
-		setCurrentProduct(currentProduct === 0 ? length - 1 : currentProduct - 1);
+		setCurrentProduct(
+			currentProduct === 0 ? length - 1 : currentProduct - 1
+		);
 	};
 	// console.log(currentProduct);
 	return (
@@ -29,13 +34,33 @@ const FirstPage = ({ products }) => {
 						{index === currentProduct && (
 							<div className='first-half'>
 								<div className='left-promo'>
-									<img src={pictures.mainImg} alt='photosss' className='display' />
+									<img
+										src={pictures.mainImg}
+										alt='photosss'
+										className='display'
+									/>
 									<div className='arrows'>
-										<button onClick={previousButtonHandler} className='previous-button'>
-											<img src={previous} alt='previous' />
+										<button
+											onClick={
+												previousButtonHandler
+											}
+											className='previous-button'
+										>
+											<img
+												src={previous}
+												alt='previous'
+											/>
 										</button>
-										<button onClick={nextButtonHandler} className='next-button'>
-											<img src={next} alt='next' />
+										<button
+											onClick={
+												nextButtonHandler
+											}
+											className='next-button'
+										>
+											<img
+												src={next}
+												alt='next'
+											/>
 										</button>
 									</div>
 								</div>
@@ -46,7 +71,11 @@ const FirstPage = ({ products }) => {
 										<p>{pictures.description}</p>
 										<span className='shop-now'>
 											<Link to='/'>
-												SHOP NOW <img src={iconArrow} alt='iconArrow' />
+												SHOP NOW{" "}
+												<img
+													src={iconArrow}
+													alt='iconArrow'
+												/>
 											</Link>
 										</span>
 									</div>

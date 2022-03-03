@@ -1,5 +1,7 @@
 //Styling
-import styles from "./styles/app.scss";
+import React from "react";
+import "./styles/app.scss";
+
 //Components
 import Nav from "./components/Nav";
 import TopPage from "./components/TopPage";
@@ -14,7 +16,6 @@ function App() {
 			<div className='main-page'>
 				<Nav />
 				<TopPage products={ProductState} />
-
 				<BottomPage />
 			</div>
 		</div>
