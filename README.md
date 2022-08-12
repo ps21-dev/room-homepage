@@ -1,5 +1,5 @@
 ## Live Demo - https://room-project.netlify.app/
-# Static page built with React and SASS
+### - Static page built with React and SASS
 
 
 # Getting Started with Create React App
